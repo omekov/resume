@@ -1,0 +1,64 @@
+
+.page  {
+    display: flex;
+}
+.person {
+    width: 300px;
+    background-color: hsl(223.2deg 19.69% 24.9%);
+    color: #fff;
+}
+.person-section {
+    margin-top: 10px;
+    margin-left:50px;
+}
+
+.person-photo {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.person-avatar {
+    text-align: center;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.person-career {
+    width: 70%;
+    background-color: #fff;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none ;
+    font-size: 12px;
+
+}
+.link:hover {
+    font-weight: 400;
+}
+
+.person-section__box{
+    margin: 2em 0;
+}
+
+.person-section__name {
+    font-size: 22px;
+}
+
+.person-career {
+    padding: 30px;
+}
+.person-name {
+    margin: 10px 0;
+    h1 {
+        font-weight: 300;
+        margin: 0;
+    }
+    font-size: 28px;
+    span {
+        font-size: 14px;
+        margin: 0;
+    }
+}

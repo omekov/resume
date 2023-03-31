@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+
+p, h3 {
+    margin: 0;
+}
+@media (min-width: 575.98px){
+.container {
+    max-width: 540px;
+    margin: auto;
+    padding: 0;
+}
+}
+
+@media (min-width: 767.98px){
+.container {
+    max-width: 720px;	
+}
+}
+
+@media (min-width: 991.98px) {
+.container {
+    max-width: 960px;
+}
+}
+
+@media (min-width: 1199.98px){
+.container {
+    max-width: 1140px;
+}
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
