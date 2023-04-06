@@ -62,3 +62,29 @@
         margin: 0;
     }
 }
+
+.point {
+    width: 7px;
+    height: 7px;
+    border: 1.5px solid;
+    border-radius: 50px;
+}
+
+.vertical {
+    margin-left: 4.5px;
+    border-left: 1px solid #151515;
+    height: 100%;
+}
+
+.experience-info {
+    display: flex;
+    justify-content: space-between;
+}
+.experience-flow {
+    margin-top: 9px;
+}
+.experience-text {
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
