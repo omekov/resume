@@ -1,4 +1,10 @@
 <div class="container">
+  <div class="resume-language">
+    <button (click)="changeLanguage('en')" class="button-lang button-lang-en"></button>
+    <button (click)="changeLanguage('ru')" class="button-lang button-lang-ru"></button>
+    <button (click)="changeLanguage('kz')" class="button-lang button-lang-kz"></button>
+  </div>
+
   <div class="page">
     <div class="person">
       <div class="person-photo">
@@ -6,12 +12,12 @@
       </div>
       <div class="person-section">
         <div>     
-          <b class="person-section__name">Contact</b>
+          <b class="person-section__name">{{'contact' | translate}}</b>
           <hr/>
         </div>
         <div class="person-section__box">
           <p><b>Phone</b></p>
-          <p><a href="tel:+7-707-171-8160" class="link">+7 (707) 171 81-60</a></p>
+          <p><a href="tel:+7-707-171-8160" class="link">+7 {{phoneNumber}} </a><button (click)="showPhoneNumber()" *ngIf="!isShowPhoneNumber">показать</button></p>
         </div>
         <div class="person-section__box">
           <p><b>Email</b></p>
@@ -24,7 +30,7 @@
       </div>
       <div class="person-section">
         <div>     
-          <b class="person-section__name">Education</b>
+          <b class="person-section__name">{{'education' | translate}}</b>
           <hr/>
         </div>
         <div class="person-section__box">
@@ -40,7 +46,7 @@
       </div>
       <div class="person-section">
         <div>     
-          <b class="person-section__name">Expertise</b>
+          <b class="person-section__name">{{'skills' | translate}}</b>
           <hr/>
         </div>
         <ul>
@@ -49,7 +55,7 @@
       </div>
       <div class="person-section">
         <div>     
-          <b class="person-section__name">Language</b>
+          <b class="person-section__name">{{'language' | translate}}</b>
           <hr/>
         </div>
         <div class="person-section__box">
@@ -63,11 +69,12 @@
     </div>
     <div class="person-career">
       <div class="person-name">
-        <h1 ><b>Azamat</b> Omekov</h1>
+        <h1 ><b>{{ 'firstName' | translate }}</b> {{ 'lastName' | translate }}</h1>
        <p>Software engineer</p>
        <span>
         Интересуюсь новыми технологиями в сфере IT постоянно. Совершенствую свои профессиональные знания и личные навыки. Целеустремленный, исполнительный, ответственный, умею работать в команде, а также адаптироваться к новым условиям. Концентрироваться на поставленной задаче, иногда внимательный к деталям и разным кейсом. Свободное время хайкингом по горам Алматы. Увлекаюсь бегом, теннисом, футболом. Предпочитаю активный вид отдыха.       </span>
       </div>
+ 
       <div class="person-experience">
         <div>     
           <b class="person-section__name">Experience</b>

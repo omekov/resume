@@ -88,3 +88,25 @@
     margin-top: 5px;
     margin-bottom: 20px;
 }
+.resume-language {
+    position: fixed;
+    right: 0;
+    top: 10px;
+}
+.button-lang {
+    border-radius: 5px;
+    width: 50px;
+    height: 25px;
+    background-repeat: round;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.button-lang-en {
+    background-image: url('/assets/en.png');
+}
+.button-lang-ru {
+    background-image: url('/assets/ru.png');
+}
+.button-lang-kz {
+    background-image: url('/assets/kz.png');
+}
